@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winners Talking Podcast | Pound Sterling & Big Doug</title>
+  <meta name="description" content="Winners Talking Podcast - Interviews and unfiltered banter covering social issues, current affairs, music and sport. Hosted by Pound Sterling and Big Doug.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="logo-primary.svg" alt="Winners Talking Podcast">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="creatives.html">Creatives</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="https://www.instagram.com/winnerstalkingpodcast/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@winnerstalkingpodcast" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@winnerstalkingpodcast" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-image"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="logo-secondary.svg" alt="Winners Talking Podcast" class="hero-logo">
+      <p class="hero-tagline">Interviews and unfiltered banter. Social issues, current affairs, music &amp; sport.</p>
+      <div class="hero-buttons">
+        <a href="#latest-episode" class="btn btn-primary">
+          <i class="fas fa-play"></i> Watch Latest Episode
+        </a>
+        <a href="https://open.spotify.com/show/624EnW1sEqkrkbXDfE37Nu" target="_blank" rel="noopener" class="btn btn-secondary">
+          <i class="fab fa-spotify"></i> Listen on Spotify
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Episodes Tab Section -->
+  <section class="episodes-section" id="episodes">
+    <div class="container">
+      <h2 class="section-title">Browse</h2>
+      <div class="episodes-controls">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="full_episode" id="tabFullEpisodes">Full Episodes</button>
+          <button class="tab-btn" data-tab="clip" id="tabClips">Clips</button>
+        </div>
+        <div class="search-bar-wrapper">
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="Search episodes..." aria-label="Search episodes">
+            <button class="filter-btn" id="filterBtn" aria-label="Filter">
+              <i class="fas fa-sliders-h"></i>
+            </button>
+          </div>
+          <div class="filter-dropdown" id="filterDropdown">
+            <h4>Sort By</h4>
+            <button class="filter-option active" data-sort="newest">Newest First</button>
+            <button class="filter-option" data-sort="oldest">Oldest First</button>
+            <button class="filter-option" data-sort="longest">Longest First</button>
+            <button class="filter-option" data-sort="shortest">Shortest First</button>
+            <button class="filter-option" data-sort="az">A - Z</button>
+            <button class="filter-option" data-sort="za">Z - A</button>
+          </div>
+        </div>
+      </div>
+      <div class="video-grid" id="videoGrid">
+        <!-- Populated by app.js -->
+      </div>
+      <div class="load-more-wrapper">
+        <button class="btn btn-primary load-more-btn" id="loadMoreBtn">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <h2 class="section-title">About the Hosts</h2>
+      <p class="about-description">
+        Winners Talking Podcast is a UK-based show hosted by <strong>Pound Sterling</strong> and <strong>Big Doug</strong>.
+        From the streets of South East London, they bring raw, unfiltered conversations covering everything from social issues
+        and current affairs to music, sport, and culture. With a roster of guests spanning the worlds of grime, drill, football,
+        business, and beyond, every episode delivers real talk, big laughs, and perspectives you won't hear anywhere else.
+      </p>
+      <div class="host-cards">
+        <!-- Pound Sterling -->
+        <div class="host-card">
+          <div class="host-image">
+            <img src="pound-sterling.jpg" alt="Pound Sterling">
+          </div>
+          <div class="host-details">
+            <h3 class="host-name">Pound Sterling</h3>
+
+            <p class="host-bio">
+              Rapper from the UK hip-hop scene. His track "For My Dogs" dominated Channel U charts for ten weeks,
+              and "So Real" hit #1. A business-minded entrepreneur who brings sharp insight and energy to every episode.
+            </p>
+            <div class="host-socials">
+              <a href="https://www.instagram.com/poundsterling1/" target="_blank" rel="noopener" aria-label="Pound Sterling Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/PoundSterling1" target="_blank" rel="noopener" aria-label="Pound Sterling Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="https://www.facebook.com/officialpoundsterling" target="_blank" rel="noopener" aria-label="Pound Sterling Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Big Doug -->
+        <div class="host-card">
+          <div class="host-image">
+            <img src="big-doug.jpg" alt="Big Doug">
+          </div>
+          <div class="host-details">
+            <h3 class="host-name">Big Doug</h3>
+
+            <p class="host-bio">
+              South East London's own. Full-time railway career by day, co-host of a MOBO-nominated podcast,
+              SE Dons squad member, founder of Lean Gang UK clothing, and events promoter behind Lunare Nights.
+              A man juggling multiple responsibilities at the highest level.
+            </p>
+            <div class="host-socials">
+              <a href="https://www.instagram.com/dougsta_27/" target="_blank" rel="noopener" aria-label="Big Doug Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/Big_Doug_27" target="_blank" rel="noopener" aria-label="Big Doug Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="https://www.threads.net/@dougsta_27" target="_blank" rel="noopener" aria-label="Big Doug Threads"><i class="fab fa-threads"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Listen & Latest Episode Combined -->
+  <section class="listen-section" id="listen">
+    <div class="container">
+      <div class="listen-combined">
+        <div class="listen-latest">
+          <h2 class="section-title">Latest Episode</h2>
+          <div class="featured-player">
+            <div class="featured-video-wrapper" id="featuredVideoWrapper">
+              <!-- Populated by app.js -->
+            </div>
+            <div class="featured-info" id="featuredInfo">
+              <!-- Populated by app.js -->
+            </div>
+          </div>
+        </div>
+        <div class="listen-platforms">
+          <h2 class="section-title">Listen &amp; Subscribe</h2>
+          <p class="listen-subtitle">Catch every episode on your favourite platform.</p>
+          <div class="platform-grid">
+            <a href="https://open.spotify.com/show/624EnW1sEqkrkbXDfE37Nu" target="_blank" rel="noopener" class="platform-card" aria-label="Spotify">
+              <i class="fab fa-spotify"></i>
+            </a>
+            <a href="https://www.youtube.com/@winnerstalkingpodcast" target="_blank" rel="noopener" class="platform-card" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.tiktok.com/@winnerstalkingpodcast" target="_blank" rel="noopener" class="platform-card" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://www.amazon.com/Winners-Talking-Podcast/dp/B08JJR2VG7" target="_blank" rel="noopener" class="platform-card" aria-label="Amazon">
+              <i class="fab fa-amazon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-subtitle">Got a general enquiry or want to be a guest on the show? Drop us a message.</p>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input type="text" id="contactName" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" placeholder="Your email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contactType">Enquiry Type</label>
+          <select id="contactType" name="type" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="general">General Enquiry</option>
+            <option value="guest">I'd like to be a guest on the show</option>
+            <option value="business">Business / Sponsorship</option>
+          </select>
+        </div>
+        <div class="form-group" id="socialGroup" style="display:none;">
+          <label for="contactSocial">Your Social Media Handle</label>
+          <input type="text" id="contactSocial" name="social" placeholder="@yourhandle">
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary contact-submit">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+        <div class="form-success" id="formSuccess" style="display:none;">
+          <i class="fas fa-check-circle"></i> Message sent! We'll get back to you soon.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="logo-primary.svg" alt="Winners Talking Podcast" class="footer-logo">
+          <p class="footer-tagline">Interviews and unfiltered banter.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#episodes">Episodes</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="creatives.html">Creatives</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/winnerstalkingpodcast/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@winnerstalkingpodcast" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@winnerstalkingpodcast" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Winners Talking Podcast. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close video">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-video-wrapper" id="modalVideoWrapper">
+        <!-- iframe injected by app.js -->
+      </div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
