@@ -785,6 +785,8 @@ img {
 .host-socials a {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1351,6 +1353,14 @@ img {
 
   .host-socials {
     justify-content: center;
+    gap: 0.4rem;
+  }
+
+  .host-socials a {
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    font-size: 0.8rem;
   }
 
   .listen-combined {
