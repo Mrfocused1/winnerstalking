@@ -398,6 +398,18 @@
   }
 
   // ========================================================================
+  // BIO ACCORDION (mobile)
+  // ========================================================================
+  document.querySelectorAll('.bio-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var bio = this.nextElementSibling;
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      bio.classList.toggle('open');
+    });
+  });
+
+  // ========================================================================
   // INIT
   // ========================================================================
   initFeatured();

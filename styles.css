@@ -801,6 +801,10 @@ img {
   transform: scale(1.15);
 }
 
+.bio-toggle {
+  display: none;
+}
+
 /* --- Listen Section --- */
 .listen-section {
   padding: 5rem 0;
@@ -1300,8 +1304,44 @@ img {
     font-size: 1.3rem;
   }
 
+  .bio-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: var(--grey-light);
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    margin: 0 auto 0.5rem;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .bio-toggle i {
+    font-size: 0.55rem;
+    transition: transform 0.3s ease;
+  }
+
+  .bio-toggle[aria-expanded="true"] i {
+    transform: rotate(180deg);
+  }
+
   .host-bio {
     font-size: 0.65rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .host-bio.open {
+    max-height: 200px;
+    opacity: 1;
   }
 
   .host-details {
